@@ -1,18 +1,10 @@
- ---------------------------
-⁞ ᴑ • • • • • • • • • • • • ⁞  SMC Tool by David R (Discord: Muerto#6935)
-⁞ • • • • • • • • • • • • • ⁞  This project aims to make flashing a Mac SMC quicker and easier.
-⁞ • • • • • • • • • • • • • ⁞
-⁞ • • • • • • • • • • • • • ⁞  Thanks to:
-⁞ • • • • • •   • • • • • • ⁞  Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe
-⁞ • • • • •       • • • • • ⁞  
-⁞ • • • •           • • • • ⁞  Current Version: 1.0.3
-⁞ • • • • •       • • • • • ⁞
-⁞ • • • • • • • • • • • • • ⁞  
-⁞ • • • • • • • • • • • • • ⁞  
-⁞ • • • • • • • • • • • • • ⁞
-⁞ • • • • • • • • • • • • • ⁞
-⁞ • • • • • • • • • • • • • ⁞
- ---------------------------
+SMC Tool by David R (Discord: Muerto#6935)
+This project aims to make flashing a Mac SMC quicker and easier.
+
+Thanks to:
+Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe
+
+Current Version: 1.0.3
 
 ------------------------------------------------------------------------------------------------------------------------
 Creating a USB disk:
