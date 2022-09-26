@@ -1,11 +1,8 @@
-<<<<<<< HEAD
+
 SMC Tool by David R (Discord: Muerto#6935)\
-=======
-SMC Tool by David R (Discord: Muerto#6935)
->>>>>>> d47efcdd8487e6db01db7cb975fc25b55b431046
 This project aims to make flashing a Mac SMC quicker and easier.
 
-Thanks to:
+Thanks to:\
 Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe
 
 Current Version: 1.0.3
