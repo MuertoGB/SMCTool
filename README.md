@@ -21,13 +21,13 @@ Images can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/rel
 ------------------------------------------------------------------------------------------------------------------------
 **Creating a USB disk:**
 -
-To begin, format a USB disk in ExFAT, FAT32 or HFS+ with a Master Boot Record (MBR) filesystem. Then....
+To begin, format a USB disk in ExFAT, FAT32 or HFS+ with a Master Boot Record (MBR) partition. Then....
 
 - Option A: Manually copy the SMC_Tool.iso files to the formatted USB disk.\
 `Hidden files must be shown, otherwise the volume icon and name may not transfer, thus the disk will show as 'EFI Boot'.`
 - Option B: Write the raw SMC_Tool.img to disk with ddrescue, or similar.
 
-**NOTE:** You may use a bootable USB creation tool, however, make sure to use the correct filesystem when formatting.
+**NOTE:** You may use a bootable USB creation tool, however, make sure to select the correct filesystem and partition.
 
 ------------------------------------------------------------------------------------------------------------------------
 **Flashing the SMC:**
