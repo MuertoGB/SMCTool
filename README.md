@@ -1,33 +1,30 @@
 **SMC Tool by David R:**
 -
-This tool is aimed at MacBook logic board technicians, and makes flashing a MacBook SMC quicker and easier. It not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'. Simply take a donor SMC from another board, replace and flash.
+Aimed at MacBook logic board technicians, SMC Tool makes flashing a replacement SMC quicker and easier. It not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'. Simply take a matching donor SMC from another board, replace and flash.
 
 Currently, a full list of SMC compatibility between boards is unestablished. I recommend you keep the board years as close as possible when taking a donor SMC from a non-matching board.
 
-This tool is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
-SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
-
-Discord: `Muerto#6935`
+💡This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
+🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
 
 Thanks to:\
-Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe.
+Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe, theSmudge.
 
 ------------------------------------------------------------------------------------------------------------------------
 **Download:**
 -
-Current Version: `1.0.3`\
-Images can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/releases) section.
+Current Version: `1.0.4` \
+See the [Changelog](CHANGELOG.md).\
+Downloads can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/releases) section.
 
 ------------------------------------------------------------------------------------------------------------------------
 **Creating a USB disk:**
 -
-To begin, format a USB disk in ExFAT, FAT32 or HFS+ with a Master Boot Record (MBR) partition. Then....
+To begin, format a USB disk in ExFAT, FAT32 or HFS+ using a GPT or MBR partition table, then....
 
-- Option A: Manually copy the SMC_Tool.iso files to the formatted USB disk.\
-`Hidden files must be shown, otherwise the volume icon and name may not transfer, thus the disk will show as 'EFI Boot'.`
-- Option B: Write the raw SMC_Tool.img to disk with ddrescue, or similar.
-
-**NOTE:** You may use a bootable USB creation tool, however, make sure to select the correct filesystem and partition.
+- Option A: Manually copy all SMC_Tool.iso files to the formatted USB disk.
+- Option B: Write the SMC_Tool.img to disk with ddrescue, Passmark imageUSB, or similar.
+- Option C: Use a bootable USB creation tool and select SMC_Tool.iso as the source file.
 
 ------------------------------------------------------------------------------------------------------------------------
 **Flashing the SMC:**
@@ -42,15 +39,10 @@ To begin, format a USB disk in ExFAT, FAT32 or HFS+ with a Master Boot Record (M
 ------------------------------------------------------------------------------------------------------------------------
 **Compatible Boards:**
 -
->A1465 820-3435  (Mojave Firmware)   Type: `820-3435.nsh`\
-A1466 820-3437  (Mojave Firmware)   Type: `820-3437.nsh`\
-A1465 820-00164 (Mojave Firmware)   Type: `820-00164.nsh`\
-A1466 820-00165 (Mojave Firmware)   Type: `820-00165.nsh`\
-A1502 820-3476  (Mojave Firmware)   Type: `820-3476.nsh`\
-A1502 820-4924  (Mojave Firmware)   Type: `820-4924.nsh`\
-A1398 820-3662  (Mojave Firmware)   Type: `820-3662.nsh`\
-A1398 820-00138 (Yosemite Firmware) Type: `820-00138.nsh`\
-A1398 820-00426 (Yosemite Firmware) Type: `820-00426.nsh`
+
+See the [compatibility information](COMPATIBILITY.md).
+
+Older, single file payloads for boards such as 820-3115/3332 are currently being worked out. Support may be added in the future.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -58,38 +50,33 @@ A1398 820-00426 (Yosemite Firmware) Type: `820-00426.nsh`
 -
 
 ✅ Texus Instruments LM4 BGA157\
-❓ Texus Instruments TM4 BGA168\
-❓ Renesas DF2117 BGA145
+❌ Texus Instruments TM4 BGA168\
+❌ Renesas DF2117 BGA145
 
-Currently, only MacBooks are supported. If enough requests I'll add iMac, Mac Mini, etc.
+Only MacBooks are supported. Others platforms are possible in the future.
 
 ------------------------------------------------------------------------------------------------------------------------
 **Why must the firmware be flashed:**
 -
 
-Each SMC for its respective board are specifically programmed for that board model. Booting a machine with the incorrect SMC firmware causes erratic behaviour.
+Each SMC is specifically programmed for it's counterpart board. Using a machine with the incorrect SMC firmware causes erratic behaviour such as incorrect screen detection, high fan speed, only one fan spinning, throttling, and crashing.
 
 ------------------------------------------------------------------------------------------------------------------------
 **If you flash the wrong firmware:**
 -
 
-In most cases you can reboot and flash again with the correct firmware. In some cases you **may** brick the system, however, after much testing I've never achieved a bricked board by flashing an incorrect firmware.
+In most cases you can reboot and flash again with the correct firmware. In some cases you **might** brick the system, after much testing I've never achieved a bricked board by flashing an incorrect firmware, but know of others who have mentioned 'no power' after flashing the wrong SMC firmware for that board.
 
-If a system is somehow rendered 'bricked' and will not get to the boot menu, you must replace the SMC again.
+If a system is somehow rendered 'bricked' and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on the board it was flashed for.
 
-I am not responsible if you do something wrong, if you're here I expect you know what you're doing. If your dad's uncle's friend suggested you use this as your MacBook fan is running too fast, I suggest you turn around and leave.
+I am not responsible if you do something wrong, if you're here I expect you know what you're doing.
 
 ------------------------------------------------------------------------------------------------------------------------
-**You want to flash a different firmware:**
+** If you want to flash a different firmware:**
 -
 You can replace the update, base and app code image in the respective folder, say 820-00165 would be `payloads\Mac-937CB26E2E02BB01`.
 
 Alternative SMC payloads can be found in firmwareupdate.pkg inside the MacOS Install.ESD file, or [here](https://github.com/sadponyguerillaboy/SMC-Toolkit/tree/main/SMCPayloads).
-
-------------------------------------------------------------------------------------------------------------------------
-**SMC hardware flashing:**
--
-I'm actively investing time into this. So far it has proved not to be worth the time and effort, on top of this its getting harder to acquire blank TI LM4F and you must manually build a 256k binary. This tool has slighlty toppled my will to continue putting effort in. However, I will keep going, no promises you'll hear any more about it.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -103,7 +90,7 @@ The script will automatically switch screen mode when it can.
 **Licenses and acknowledgements:**
 -
 
-Apple Terminal icon by [jonc](https://macosicons.com/#/u/jonc) on macOSicons.
+Startup manager icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.
 
   *** UEFI Shell v2.0, release 4.632 ***
 

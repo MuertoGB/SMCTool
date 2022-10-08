@@ -5,7 +5,7 @@ cls
 
 echo "MacBookPro12,1"
 echo "Mac-E43C1C25D4880AD6"
-echo "Flashing SMC with 820-4924 firmware..."
+echo "Flashing SMC with 820-4924 v2.28f7 firmware..."
 
 smcutil.efi -force -norestart -LoadUpdate payloads\Mac-E43C1C25D4880AD6\flasher_update.smc
 smcutil.efi -force -norestart -LoadBase payloads\Mac-E43C1C25D4880AD6\flasher_base.smc
