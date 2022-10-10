@@ -11,6 +11,12 @@ Thanks to:\
 Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe, theSmudge.
 
 ------------------------------------------------------------------------------------------------------------------------
+**Before you start:**
+-
+
+I am not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my upmost to verify all information to my best ability, I am not responsible for any mistakes on my end either. As they say, sometimes shit happens.
+
+------------------------------------------------------------------------------------------------------------------------
 **Download:**
 -
 Current Version: `1.0.4` \
@@ -20,11 +26,13 @@ Downloads can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/
 ------------------------------------------------------------------------------------------------------------------------
 **Creating a USB disk:**
 -
-To begin, format a USB disk in ExFAT, FAT32 or HFS+ using a GPT or MBR partition table, then....
+To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ using a GPT or MBR partition table, then....
 
 - Option A: Manually copy all SMC_Tool.iso files to the formatted USB disk.
 - Option B: Write the SMC_Tool.img to disk with ddrescue, Passmark imageUSB, or similar.
 - Option C: Use a bootable USB creation tool and select SMC_Tool.iso as the source file.
+
+Extended instructions [here](BOOTABLEUSB.md).
 
 ------------------------------------------------------------------------------------------------------------------------
 **Flashing the SMC:**
@@ -34,7 +42,7 @@ To begin, format a USB disk in ExFAT, FAT32 or HFS+ using a GPT or MBR partition
   3. Type the boardnumber.nsh you want to flash, e.g: `820-00165.nsh`, then press return, the script will then flash the SMC.
   4. Type 'exit' to reboot, or power off machine to complete the process.
 
-  Quick video of flashing an SMC [here](  https://www.youtube.com/watch?v=nUm30m3zNxI).
+  Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
 
 ------------------------------------------------------------------------------------------------------------------------
 **Compatible Boards:**
@@ -59,20 +67,18 @@ Only MacBooks are supported. Others platforms are possible in the future.
 **Why must the firmware be flashed:**
 -
 
-Each SMC is specifically programmed for it's counterpart board. Using a machine with the incorrect SMC firmware causes erratic behaviour such as incorrect screen detection, high fan speed, only one fan spinning, throttling, and crashing.
+Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, themal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
 
 ------------------------------------------------------------------------------------------------------------------------
 **If you flash the wrong firmware:**
 -
 
-In most cases you can reboot and flash again with the correct firmware. In some cases you **might** brick the system, after much testing I've never achieved a bricked board by flashing an incorrect firmware, but know of others who have mentioned 'no power' after flashing the wrong SMC firmware for that board.
+In most cases you can flash again with the correct firmware. In some cases you **might** brick the system. After much testing I've never achieved a bricked board by flashing an incorrect firmware, however, others have mentioned 'no power' after flashing the wrong SMC firmware for that board after a reboot, or power down.
 
-If a system is somehow rendered 'bricked' and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on the board it was flashed for.
-
-I am not responsible if you do something wrong, if you're here I expect you know what you're doing.
+If a system is somehow rendered 'bricked' and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was programmed for.
 
 ------------------------------------------------------------------------------------------------------------------------
-** If you want to flash a different firmware:**
+**If you want to flash a different firmware:**
 -
 You can replace the update, base and app code image in the respective folder, say 820-00165 would be `payloads\Mac-937CB26E2E02BB01`.
 
@@ -82,7 +88,7 @@ Alternative SMC payloads can be found in firmwareupdate.pkg inside the MacOS Ins
 
 **EFI Screen resolution:**
 -
-Use the `mode` command to display a list of supported screen modes, then type the highest mode available e.g. `mode 160 47`, then press return.
+Use the `mode` command to display a list of supported screen modes, type the highest mode available e.g. `mode 160 47`, then press return.
 
 The script will automatically switch screen mode when it can.
 
