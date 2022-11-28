@@ -10,7 +10,7 @@ Currently, a full list of SMC compatibility between boards is unestablished. I r
 Thanks to:\
 Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe, theSmudge.
 
-If you would like to make a donation for my work, please see the link below:
+If you would like to make a donation for my work, please see the link below:\
 https://www.buymeacoffee.com/Muerto
 
 ------------------------------------------------------------------------------------------------------------------------
