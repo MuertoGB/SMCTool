@@ -19,6 +19,8 @@ https://www.buymeacoffee.com/Muerto
 
 I am not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my upmost to verify all information to my best ability, I am not responsible for any mistakes on my end either. As they say, sometimes shit happens.
 
+This tool cannot be used to program blank LM4F.
+
 ------------------------------------------------------------------------------------------------------------------------
 **Download:**
 -
