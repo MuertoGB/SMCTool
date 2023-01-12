@@ -1,5 +1,5 @@
 @echo ""
-@echo "SMC Tool by David R - V1.0.4"
+@echo "SMCTool V1.0.5 by David R (Muerto)"
 @echo "Making SMC flashing easier."
 @echo ""
 @echo "Thanks to Paul L Daniels, pbatard"
