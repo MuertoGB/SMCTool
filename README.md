@@ -2,28 +2,32 @@
 -
 Aimed at MacBook logic board technicians, SMC Tool makes flashing a replacement SMC quicker and easier. It not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'. Simply take a matching donor SMC from another board, replace and flash.
 
-Currently, a full list of SMC compatibility between boards is unestablished. I recommend you keep the board years as close as possible when taking a donor SMC from a non-matching board.
+Currently, a full list of SMC boot compatibility between boards has not been established. I recommend you keep the board years as close as possible when taking a donor SMC from a non-matching board, otherwise the machine may not power on.
 
-💡This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
+It has come to my attention... SMCTool may not like some USB memory sticks, I use SanDisk SDCZ50 USB 2.0 without issue. Possibly an issue with UEFI, I don't know, yet.
+
+💡 This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
 🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
 
-Thanks to:\
+**Thanks to:**\
 Paul L Daniels, pbatard, Logi.wiki, EineWildeStehlampe, theSmudge.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **Before you start:**
 -
 
-I am not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my upmost to verify all information to my best ability, I am not responsible for any mistakes on my end either. As they say, sometimes shit happens.
+I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm also not responsible for any mistakes my end either. As they say, sometimes shit happens.
 
-------------------------------------------------------------------------------------------------------------------------
+This is also **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware.
+
+---
 **Download:**
 -
 Current Version: `1.0.5`\
 See the [Changelog](CHANGELOG.md).\
 Downloads can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/releases) section.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **Creating a USB disk:**
 -
 To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ using a GPT or MBR partition table, then....
@@ -34,7 +38,7 @@ To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ using a GPT or MBR par
 
 Extended instructions [here](BOOTABLEUSB.md).
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **Flashing the SMC:**
 -
   1. Plug in your USB disk and power on the Mac whilst holding the `Option ⌥` key.
@@ -44,7 +48,7 @@ Extended instructions [here](BOOTABLEUSB.md).
 
   Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **Compatible Boards:**
 -
 
@@ -52,7 +56,7 @@ See the [compatibility information](COMPATIBILITY.md).
 
 Older, single file payloads for boards such as 820-3115/3332 are currently being worked out. Support may be added in the future.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 
 **Compatible SMCs:**
 -
@@ -61,15 +65,15 @@ Older, single file payloads for boards such as 820-3115/3332 are currently being
 ❌ Texus Instruments TM4 BGA168\
 ❌ Renesas DF2117 BGA145
 
-Only MacBooks are supported. Others platforms are possible in the future.
+Currently supporting MacBook. Mac Mini. Coming soon is iMac.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **Why must the firmware be flashed:**
 -
 
-Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, themal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
+Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **If you flash the wrong firmware:**
 -
 
@@ -77,14 +81,14 @@ In most cases you can flash again with the correct firmware. In some cases you *
 
 If a system is somehow rendered 'bricked' and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was programmed for.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **If you want to flash a different firmware:**
 -
 You can replace the update, base and app code image in the respective folder, say 820-00165 would be `payloads\Mac-937CB26E2E02BB01`.
 
 Alternative SMC payloads can be found in firmwareupdate.pkg inside the MacOS Install.ESD file, or [here](https://github.com/sadponyguerillaboy/SMC-Toolkit/tree/main/SMCPayloads).
 
-------------------------------------------------------------------------------------------------------------------------
+---
 
 **EFI Screen resolution:**
 -
@@ -92,7 +96,7 @@ Use the `mode` command to display a list of supported screen modes, type the hig
 
 The script will automatically switch screen mode when it can.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 **Licenses and acknowledgements:**
 -
 

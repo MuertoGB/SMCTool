@@ -2,7 +2,7 @@
 -
 This information is still a work in progress, I only have so many MacBooks at my disposal to verify board-ids and perform a test flash. If a model is marked as verified, this means it was successfully flashed with SMC Tool. If a board is not in the below list, it isn't currently supported.
 
-Some boards carry identicle board-ids but have different logic board models, I have tried to keep them seperate for ease of use.
+Some boards carry identical board-ids but have different logic board models, I have tried to keep them separate for ease of use.
 
 If you'd like to verify a board please open an issue. Make sure to include the model, EMC number, board-id, board model, and proof of a successful flash (Just copy the format below if you want). I would really appreciate help here.
 
