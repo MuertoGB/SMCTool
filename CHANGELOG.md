@@ -1,3 +1,7 @@
+**Version 1.0.5**
+ ```
+ - Support Board: 820-5509
+ ```
 **Version 1.0.4**
  ```
  - GPT issues resolved

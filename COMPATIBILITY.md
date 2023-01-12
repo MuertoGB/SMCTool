@@ -109,7 +109,7 @@ A1398 (EMC2876, EMC2881)
 
 Flash using 820-3787.nsh
 ```
-**Use the below with precation, I'm unsure they're all 06F11F11946D27C5.**
+*Use the below with precation, I'm unsure they're all 06F11F11946D27C5.*
 ```
 A1398 (EMC2909)
 
@@ -141,4 +141,13 @@ A1398 (EMC2910)
  - Firmware: 2.30f2
 
 Flash using 820-00426.nsh
+```
+**Mac Mini**
+```
+ - MacMini7,1 (Late 2014-2017)
+ - Board Model: 820-5509
+ - Board-ID: Mac-35C5E08120C7EEAF
+ - Firmware: v2.24f32
+ 
+ Flash using 820-5509.nsh
 ```
