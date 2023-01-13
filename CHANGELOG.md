@@ -1,3 +1,9 @@
+**Version 1.0.5**
+ ```
+ - Script optimisation
+ - Moved thanks to complete.nsh to make space in startup.nsh
+ - Support Board: 820-5509
+ ```
 **Version 1.0.4**
  ```
  - GPT issues resolved

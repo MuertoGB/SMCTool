@@ -2,7 +2,7 @@
 -
 This information is still a work in progress, I only have so many MacBooks at my disposal to verify board-ids and perform a test flash. If a model is marked as verified, this means it was successfully flashed with SMC Tool. If a board is not in the below list, it isn't currently supported.
 
-Some boards carry identicle board-ids but have different logic board models, I have tried to keep them seperate for ease of use.
+Some boards carry identical board-ids but have different logic board models, I have tried to keep them separate for ease of use.
 
 If you'd like to verify a board please open an issue. Make sure to include the model, EMC number, board-id, board model, and proof of a successful flash (Just copy the format below if you want). I would really appreciate help here.
 
@@ -109,7 +109,7 @@ A1398 (EMC2876, EMC2881)
 
 Flash using 820-3787.nsh
 ```
-**Use the below with precation, I'm unsure they're all 06F11F11946D27C5.**
+*Use the below with precation, I'm unsure they're all 06F11F11946D27C5.*
 ```
 A1398 (EMC2909)
 
@@ -141,4 +141,13 @@ A1398 (EMC2910)
  - Firmware: 2.30f2
 
 Flash using 820-00426.nsh
+```
+**Mac Mini**
+```
+ - MacMini7,1 (Late 2014-2017)
+ - Board Model: 820-5509
+ - Board-ID: Mac-35C5E08120C7EEAF
+ - Firmware: v2.24f32
+ 
+ Flash using 820-5509.nsh
 ```
