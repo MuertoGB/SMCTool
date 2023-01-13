@@ -1,10 +1,6 @@
 **SMC Tool by David R:**
 -
-<<<<<<< Updated upstream
-Aimed at MacBook logic board technicians, SMC Tool makes flashing a replacement SMC quicker and easier. It not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'. Simply take a matching model donor SMC from another board, replace and flash.
-=======
 Aimed at Mac logic board technicians, SMCTool makes flashing a replacement SMC quicker and easier. It not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'. Simply take a matching donor SMC* from another board, replace and flash.
->>>>>>> Stashed changes
 
 *Currently, a full list of SMC boot compatibility between boards has not been established. I recommend you keep the board years as close as possible when taking a donor SMC from a non-matching board, otherwise the machine may not power on.
 
