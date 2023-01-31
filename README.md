@@ -25,6 +25,8 @@ I'm not responsible if you do something wrong, if you're here I expect you to kn
 
 This is also **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware.
 
+Removing the system storage drive is necessary in most cases, otherwise 'startup.nsh' may not run.
+
 ---
 **Download:**
 -
