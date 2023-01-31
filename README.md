@@ -4,7 +4,7 @@ Aimed at Mac logic board technicians, SMCTool makes flashing a replacement SMC q
 
 *Currently, a full list of SMC boot compatibility between boards has not been established. I recommend you keep the board years as close as possible when taking a donor SMC from a non-matching board, otherwise the machine may not power on.
 
-It has come to my attention SMCTool may not like some USB memory sticks, I use SanDisk SDCZ50 USB 2.0 without issue. Possibly an issue with UEFI, I don't know, yet.
+It has come to my attention SMCTool may not like some USB memory sticks, I use SanDisk SDCZ50 USB 2.0 without issue. Possibly an issue with UEFI, I don't know, yet. Also, removing the system storage drive is necessary in most cases, otherwise 'startup.nsh' may not run.
 
 💡 This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
 🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
@@ -24,8 +24,6 @@ It has come to my attention SMCTool may not like some USB memory sticks, I use S
 I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm also not responsible for any mistakes my end either. As they say, sometimes shit happens.
 
 This is also **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware.
-
-Removing the system storage drive is necessary in most cases, otherwise 'startup.nsh' may not run.
 
 ---
 **Download:**
