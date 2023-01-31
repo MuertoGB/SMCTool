@@ -1,3 +1,8 @@
+**Version 1.0.6**
+```
+  - Corrected 820-00138 payload
+  - Corrected 820-00426 information and payloads
+```
 **Version 1.0.5**
  ```
  - Script optimisation

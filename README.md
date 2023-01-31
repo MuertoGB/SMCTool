@@ -4,7 +4,7 @@ Aimed at Mac logic board technicians, SMCTool makes flashing a replacement SMC q
 
 *Currently, a full list of SMC boot compatibility between boards has not been established. I recommend you keep the board years as close as possible when taking a donor SMC from a non-matching board, otherwise the machine may not power on.
 
-It has come to my attention SMCTool may not like some USB memory sticks, I use SanDisk SDCZ50 USB 2.0 without issue. Possibly an issue with UEFI, I don't know, yet.
+It has come to my attention SMCTool may not like some USB memory sticks, I use SanDisk SDCZ50 USB 2.0 without issue. Possibly an issue with UEFI, I don't know, yet. Also, removing the system storage drive is necessary in most cases, otherwise 'startup.nsh' may not run.
 
 💡 This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
 🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
@@ -14,6 +14,9 @@ It has come to my attention SMCTool may not like some USB memory sticks, I use S
 **Logi.wiki** for the original work, which I could base this project on.\
 **EineWildeStehlampe** for information and help regarding UEFI.\
 **theSmudge** for being a great help verifying information.
+**Nobluesky** for gathering Board-IDs.
+
+☕ If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto). Cheers. ☕
 
 ---
 **Before you start:**
@@ -25,7 +28,7 @@ This is also **not** a magical 'fix my Mac' tool, it has a specific purpose, whi
 ---
 **Download:**
 -
-Current Version: `1.0.5` - 13.01.2023\
+Current Version: `1.0.6` - (31.01.2023)\
 See the [Changelog](CHANGELOG.md).\
 Downloads can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/releases) section.
 
@@ -66,7 +69,7 @@ Older, single file payloads for boards such as 820-3115/3332 are currently being
 ❌ Texus Instruments TM4 BGA168\
 ❌ Renesas DF2117 BGA145
 
-Currently supporting MacBook. and Mac Mini. Coming soon is iMac.
+Currently supporting MacBook, and Mac Mini. iMac support is in development.
 
 ---
 **Why must the firmware be flashed:**
