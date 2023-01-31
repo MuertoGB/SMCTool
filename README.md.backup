@@ -69,7 +69,7 @@ Older, single file payloads for boards such as 820-3115/3332 are currently being
 ❌ Texus Instruments TM4 BGA168\
 ❌ Renesas DF2117 BGA145
 
-Currently supporting MacBook, and Mac Mini. iMac support is in development.
+Currently supporting MacBook. and Mac Mini. Coming soon is iMac.
 
 ---
 **Why must the firmware be flashed:**
