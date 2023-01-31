@@ -25,7 +25,7 @@ This is also **not** a magical 'fix my Mac' tool, it has a specific purpose, whi
 ---
 **Download:**
 -
-Current Version: `1.0.5` - 13.01.2023\
+Current Version: `1.0.6` - (No release date set)\
 See the [Changelog](CHANGELOG.md).\
 Downloads can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/releases) section.
 

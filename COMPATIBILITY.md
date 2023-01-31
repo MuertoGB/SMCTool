@@ -109,14 +109,14 @@ A1398 (EMC2876, EMC2881)
 
 Flash using 820-3787.nsh
 ```
-*Use the below with precation, I'm unsure they're all 06F11F11946D27C5.*
+
 ```
 A1398 (EMC2909)
 
  - MacBookPro11,4 (15-inch Mid 2015 with iGPU)
  - Board Model: 820-00138
- - Board-ID: Mac-06F11F11946D27C5
- - Firmware: 2.30f2
+ - Board-ID: Mac-06F11FD93F0323C5
+ - Firmware: 2.29f24
 
 Flash using 820-00138.nsh
 ```
@@ -131,16 +131,27 @@ A1398 (EMC2910)
 
 Flash using 820-00163.nsh
 ```
+**The 820-00426 can come with either an iGPU, or dGPU. make sure you flash the correct version.**
+```
+A1398 (EMC2909)
+
+ - MacBookPro11,4 (15-inch Mid 2015 with iGPU)
+ - Board Model: 820-00426
+ - Board-ID: Mac-06F11FD93F0323C5
+ - Firmware: 2.29f24
+
+Flash using 820-00426-IG.nsh
+```
 
 ```
 A1398 (EMC2910)
 
- - MacBookPro11,5 (15-inch Mid 2015 with ????)
+ - MacBookPro11,5 (15-inch Mid 2015 with dGPU)
  - Board Model: 820-00426
  - Board-ID: Mac-06F11F11946D27C5
  - Firmware: 2.30f2
 
-Flash using 820-00426.nsh
+Flash using 820-00426-DG.nsh
 ```
 **Mac Mini**
 ```
