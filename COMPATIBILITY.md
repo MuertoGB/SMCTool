@@ -4,11 +4,19 @@ This information is still a work in progress, I only have so many MacBooks at my
 
 Some boards carry identical board-ids but have different logic board models, I have tried to keep them separate for ease of use.
 
-If you'd like to verify a board please open an issue. Make sure to include the model, EMC number, board-id, board model, and proof of a successful flash (Just copy the format below if you want). I would really appreciate help here.
+If you'd like to verify a board please open an issue. Make sure to include the following information:-
+
+* Model Number (e.g. A1502)
+* EMC Number (e.g. EMC 2835) 
+* Board ID `ioreg -l | grep -i board-id`
+* Board Model (e.g. 820-4924)
+* Graphics Type and Model (e.g. iGPU, Intel HD 6000)
+
+---
 
 **MacBook Air**
 ```
-A1465 (EMC2631)
+A1465 (EMC 2631)
 
  - MacBookAir6,1 (11-inch Mid 2013, Early 2014)
  - Board Model: 820-3435
@@ -19,7 +27,7 @@ Flash using 820-3435.nsh
 ```
 
 ```
-A1466 (EMC2632) - Verified
+A1466 (EMC 2632) - Verified
 
  - MacBookAir6,2 (13-inch Mid 2013,  Early 2014)
  - Board Model: 820-3437
@@ -30,7 +38,7 @@ Flash using 820-3437.nsh
 ```
 
 ```
-A1465 (EMC2924)
+A1465 (EMC 2924)
 
  - MacBookAir7,1 (11-inch Early 2015)
  - Board Model: 820-00164
@@ -41,7 +49,7 @@ Flash using 820-00164.nsh
 ```
 
 ```
-A1466 (EMC2925, EMC3178) - Verified
+A1466 (EMC 2925, EMC 3178) - Verified
 
  - MacBookAir7,2 (13-inch Early 2015)
  - MacBookAir7,2 (13-inch 2017)
@@ -53,7 +61,7 @@ Flash using 820-00165.nsh
 ```
 **MacBook Pro**
 ```
-A1502 (EMC2678. EMC2875) -  Verified
+A1502 (EMC 2678. EMC 2875) -  Verified
 
  - MacBookPro11,1 (13-inch Late 2013, Mid 2014)
  - Board Model(s): 820-3476
@@ -64,7 +72,7 @@ Flash using 820-3476.nsh
 ```
 
 ```
-A1502 (EMC2678. EMC2875)
+A1502 (EMC 2678. EMC 2875)
 This model is the same as 3476, but only carries 4GB RAM. Can be flashed w/ 3476 too.
 
  - MacBookPro11,1 (13-inch Late 2013, Mid 2014)
@@ -76,7 +84,7 @@ Flash using 820-3536.nsh
 ```
 
 ```
-A1502 (EMC2835) - Verified
+A1502 (EMC 2835) - Verified
 
  - MacBookPro12,1 (13-inch Early 2015)
  - Board Model: 820-4924 
@@ -87,7 +95,7 @@ Flash using 820-4924.nsh
 ```
 
 ```
-A1398 (EMC2674, EMC2745) - Verified
+A1398 (EMC 2674, EMC 2745) - Verified
 
  - MacBookPro11,2 (15-inch Late 2013 with iGPU)
  - MacBookPro11,3 (15-inch Mid 2014 with iGPU)
@@ -99,7 +107,7 @@ Flash using 820-3662.nsh
 ```
 
 ```
-A1398 (EMC2876, EMC2881)
+A1398 (EMC 2876, EMC 2881)
 
  - MacBookPro11,2 (15-inch Late 2013 with dGPU)
  - MacBookPro11,3 (15-inch Mid 2014 with dGPU)
@@ -111,7 +119,7 @@ Flash using 820-3787.nsh
 ```
 
 ```
-A1398 (EMC2909)
+A1398 (EMC 2909) - Verified
 
  - MacBookPro11,4 (15-inch Mid 2015 with iGPU)
  - Board Model: 820-00138
@@ -122,7 +130,7 @@ Flash using 820-00138.nsh
 ```
 
 ```
-A1398 (EMC2910)
+A1398 (EMC 2910)
 
  - MacBookPro11,5 (15-inch Mid 2015 with dGPU)
  - Board Model: 820-00163
@@ -131,9 +139,9 @@ A1398 (EMC2910)
 
 Flash using 820-00163.nsh
 ```
-**The 820-00426 can come with either an iGPU, or dGPU. make sure you flash the correct version.**
+**The 820-00426 comes with either an iGPU, or dGPU, make sure you flash the correct version.**
 ```
-A1398 (EMC2909)
+A1398 (EMC 2909)
 
  - MacBookPro11,4 (15-inch Mid 2015 with iGPU)
  - Board Model: 820-00426
@@ -144,7 +152,7 @@ Flash using 820-00426-IG.nsh
 ```
 
 ```
-A1398 (EMC2910)
+A1398 (EMC 2910)
 
  - MacBookPro11,5 (15-inch Mid 2015 with dGPU)
  - Board Model: 820-00426
@@ -155,6 +163,8 @@ Flash using 820-00426-DG.nsh
 ```
 **Mac Mini**
 ```
+A1347 (EMC 2840)
+
  - MacMini7,1 (Late 2014-2017)
  - Board Model: 820-5509
  - Board-ID: Mac-35C5E08120C7EEAF

@@ -15,6 +15,8 @@ It has come to my attention SMCTool may not like some USB memory sticks, I use S
 **EineWildeStehlampe** for information and help regarding UEFI.\
 **theSmudge** for being a great help verifying information.
 
+☕ If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto). Cheers. ☕
+
 ---
 **Before you start:**
 -
@@ -25,7 +27,7 @@ This is also **not** a magical 'fix my Mac' tool, it has a specific purpose, whi
 ---
 **Download:**
 -
-Current Version: `1.0.6` - (No release date set)\
+Current Version: `1.0.6` - (31.01.2023)\
 See the [Changelog](CHANGELOG.md).\
 Downloads can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/releases) section.
 
