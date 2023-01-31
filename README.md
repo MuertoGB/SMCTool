@@ -13,7 +13,7 @@ It has come to my attention SMCTool may not like some USB memory sticks, I use S
 **Paul L Daniels** for development help, and the kick to finish this project.\
 **Logi.wiki** for the original work, which I could base this project on.\
 **EineWildeStehlampe** for information and help regarding UEFI.\
-**theSmudge** for being a great help verifying information.
+**theSmudge** for being a great help verifying information.\
 **Nobluesky** for gathering Board-IDs.
 
 ☕ If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto). Cheers. ☕
