@@ -139,17 +139,6 @@ A1398 (EMC 2910)
 
 Flash using 820-00163.nsh
 ```
-**The 820-00426 comes with either an iGPU, or dGPU, make sure you flash the correct version.**
-```
-A1398 (EMC 2909)
-
- - MacBookPro11,4 (15-inch Mid 2015 with iGPU)
- - Board Model: 820-00426
- - Board-ID: Mac-06F11FD93F0323C5
- - Firmware: 2.29f24
-
-Flash using 820-00426-IG.nsh
-```
 
 ```
 A1398 (EMC 2910)
@@ -159,7 +148,7 @@ A1398 (EMC 2910)
  - Board-ID: Mac-06F11F11946D27C5
  - Firmware: 2.30f2
 
-Flash using 820-00426-DG.nsh
+Flash using 820-00426.nsh
 ```
 **Mac Mini**
 ```
