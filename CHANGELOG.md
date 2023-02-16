@@ -1,3 +1,7 @@
+**Version 1.0.7**
+```
+  - Removed 00426 (IG) and pertaining information
+```
 **Version 1.0.6**
 ```
   - Corrected 820-00138 payload

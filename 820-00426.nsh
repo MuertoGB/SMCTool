@@ -2,7 +2,7 @@ echo -off
 
 cls
 
-echo "MacBookPro11,5"
+echo "MacBookPro11,5, dGPU"
 echo "Mac-06F11F11946D27C5"
 echo "Flashing SMC with 820-00426 v2.30f2 firmware..."
 
