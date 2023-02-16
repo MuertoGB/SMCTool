@@ -1,6 +1,6 @@
 **Compatibility Information:**
 -
-This information is still a work in progress, I only have so many MacBooks at my disposal to verify board-ids and perform a test flash. If a model is marked as verified, this means it was successfully flashed with SMC Tool. If a board is not in the below list, it isn't currently supported.
+This information is still a work in progress, I only have so many machines at my disposal to verify board-ids and perform a test flash. If a model is marked as verified, this means it was successfully flashed with SMC Tool. If a board is not in the below list, it isn't currently supported.
 
 Some boards carry identical board-ids but have different logic board models, I have tried to keep them separate for ease of use.
 
