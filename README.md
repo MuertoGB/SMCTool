@@ -66,12 +66,12 @@ No problem, just type the correct board number and the correct payload will be f
 
 **Devices:**
 
-| Devices| Supported?   | Planned?|
-|--------|-------------|--------|
-| MacBook| ✅          | `N/A`  |
-| Mac Mini|✅          | `N/A`  |
-| iMac | ❌            | `In development`  |
-| Mac Pro| ❌          | `No`  |
+| Platform | Supported?  | Planned?|
+|----------|-------------|--------|
+| MacBook  | ✅         | `N/A`  |
+| Mac Mini | ✅         | `N/A`  |
+| iMac     | ❌         | `In development`|
+| Mac Pro  | ❌         | `No`  |
 
 > ℹ See the [compatibility information](COMPATIBILITY.md) for a full list of supported models.
 

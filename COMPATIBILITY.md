@@ -1,20 +1,19 @@
-**Compatibility Information:**
--
-This information is still a work in progress, I only have so many machines at my disposal to verify board-ids and perform a test flash. If a model is marked as verified, this means it was successfully flashed with SMC Tool. If a board is not in the below list, it isn't currently supported.
+## Compatibility Information
 
-Some boards carry identical board-ids but have different logic board models, I have tried to keep them separate for ease of use.
+This information is still a work in progress, I only have so many machines at my disposal to verify board-ids and perform a test flash. If a model is marked as verified, this means it was successfully flashed with SMC Tool. If a model is not in the below list, it isn't currently supported.
 
-If you'd like to verify a board please open an issue. Make sure to include the following information:-
+If you'd like to verify a successful flash please open an issue. Make sure to include the following information:
 
-* Model Number (e.g. A1502)
-* EMC Number (e.g. EMC 2835) 
-* Board ID `ioreg -l | grep -i board-id`
-* Board Model (e.g. 820-4924)
-* Graphics Type and Model (e.g. iGPU, Intel HD 6000)
+> Model Number (e.g. A1502)\
+> EMC Number (e.g. EMC 2835)\
+> Board ID `ioreg -l | grep -i board-id`\
+> Board Model (e.g. 820-4924)\
+> Graphics Type and Model (e.g. iGPU, Intel HD 6000)\
+> Proof of a successful flash
 
 ---
 
-**MacBook Air**
+## MacBook Air
 ```
 A1465 (EMC 2631)
 
@@ -59,7 +58,7 @@ A1466 (EMC 2925, EMC 3178) - Verified
 
 Flash using 820-00165.nsh
 ```
-**MacBook Pro**
+## MacBook Pro
 ```
 A1502 (EMC 2678. EMC 2875) -  Verified
 
@@ -150,7 +149,7 @@ A1398 (EMC 2910)
 
 Flash using 820-00426.nsh
 ```
-**Mac Mini**
+## Mac Mini
 ```
 A1347 (EMC 2840)
 
@@ -161,3 +160,5 @@ A1347 (EMC 2840)
  
  Flash using 820-5509.nsh
 ```
+
+---
