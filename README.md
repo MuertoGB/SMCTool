@@ -29,9 +29,10 @@ This bootable shell is used to program a Mac LM4F (Stellaris) System Management 
 
 | Version| Release Date| Latest|
 |--------|-------------|--------|
-| [V1.0.7](https://github.com/MuertoGB/SMCTool/releases/tag/v1.0.7)| 18th February 2023   | `Yes`  |
+| [V1.0.7](https://github.com/MuertoGB/SMCTool/releases/tag/v1.0.7)| 18th Feb 2023   | `Yes`  |
+| [V1.0.6](https://github.com/MuertoGB/SMCTool/releases/tag/v1.0.6)| 31st Jan 2022   | `No`  |
 
-> 📔 See the [Changelog](CHANGELOG.md).
+> 📔 See the full [Changelog](CHANGELOG.md).
 
 ## Bootable USB
 
