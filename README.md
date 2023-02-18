@@ -54,7 +54,7 @@ Once the memory stick is ready, you can do any of the following:
 5. Type the 'boardnumber.nsh' you want to flash, e.g: `820-00165.nsh`, then press return; the script will then flash the SMC.
 6. Type `exit` to reboot, or power off machine to complete the process.
 
-> ⚠ You may need to perform and NVRAM reset after flashing an SMC.
+> ⚠ You may need to perform and [NVRAM reset](https://support.apple.com/en-mide/HT201255) after flashing an SMC.
 
 **Why must the SMC be flashed?:**\
 Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
