@@ -65,13 +65,26 @@ No problem, just type the correct board number and the correct payload will be f
 
 ## Compatibility
 
-Currently supporting MacBook, and Mac Mini, see the [compatibility information](COMPATIBILITY.md). iMac support is in development.
+**Devices:**
 
-Older single file payloads for boards such as 820-3115, 3332, and 3462 are currently being worked out. Support *may* be added in the future.
+| Devices| Supported?   | Planned?|
+|--------|-------------|--------|
+| MacBook| ✅          | `N/A`  |
+| Mac Mini|✅          | `N/A`  |
+| iMac | ❌            | `In development`  |
+| Mac Pro| ❌          | `No`  |
 
-✅ Texus Instruments LM4 BGA157\
-❌ Texus Instruments TM4 BGA168\
-❌ Renesas DF2117 BGA145
+> ℹ See the [compatibility information](COMPATIBILITY.md) for a full list of supported models.
+
+**System Management Controllers:**
+
+| SMC         | Supported?  | Planned?|
+|----------------|-------------|---------|
+| LM4F BGA157    | ✅          | `N/A`    |
+| TM4C BGA168    | ❌         | `No`    |
+| F2117LP BGA145 | ❌         | `No`    |
+
+> ℹ Older single file payloads for boards such as 820-3115, 3332, and 3462 are currently being worked out. Support *may* be added in the future.
 
 ## Disclaimers
 
