@@ -32,12 +32,12 @@ SMCTool is used to program a Mac LM4F (Stellaris) System Management Controller (
 |--------|-------------|--------|
 | [V1.0.7](https://github.com/MuertoGB/SMCTool/releases/tag/v1.0.7)| 18th February 2023   | `Yes`  |
 
-> 🗒 See the [Changelog](CHANGELOG.md).
+> 📔 See the [Changelog](CHANGELOG.md).
 
 ## Bootable USB
 
 To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ for use with SMCTool.
-> ⚠ A  GPT partition table is recommended.
+> ⚠ FAT32 using a GPT partition table is recommended.
 
 - Option A: Manually copy all files from the ISO to the formatted USB disk.
 - Option B: Write the image to disk with ddrescue, Passmark imageUSB, or similar.
