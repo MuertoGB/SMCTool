@@ -39,11 +39,12 @@ SMCTool is used to program a Mac LM4F (Stellaris) System Management Controller (
 To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ for use with SMCTool.
 > ⚠ FAT32 using a GPT partition table is recommended.
 
+Once the memory stick is ready, you can do any of the following:
 - Option A: Manually copy all files from the ISO to the formatted USB disk.
 - Option B: Write the image to disk with ddrescue, Passmark imageUSB, or similar.
 - Option C: Use a bootable USB creation tool and select the ISO, or image as the source file.
 
-Extended instructions [here](BOOTABLEUSB.md).
+> ❕ Extended instructions [here](BOOTABLEUSB.md).
 
 ## Flashing An SMC
 
@@ -54,13 +55,13 @@ Extended instructions [here](BOOTABLEUSB.md).
 5. Type the 'boardnumber.nsh' you want to flash, e.g: `820-00165.nsh`, then press return; the script will then flash the SMC.
 6. Type `exit` to reboot, or power off machine to complete the process.
 
-**Why must the SMC be flashed?:**
-> Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
+**Why must the SMC be flashed?:**\
+Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
 
-**I flashed an incorrect firmware:**
-> No problem, just type the correct board number and the correct payload will be flashed. If you restart, or power off after an incorrect payload flash, you may brick the device. If a system is somehow rendered 'bricked', and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
+**I flashed an incorrect firmware:**\
+No problem, just type the correct board number and the correct payload will be flashed. If you restart, or power off after an incorrect payload flash, you may brick the device. If a system is somehow rendered 'bricked', and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
 
-Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
+> 💻 Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
 
 ## Compatibility
 
