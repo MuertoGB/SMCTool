@@ -1,123 +1,115 @@
-**SMC Tool by David R:**
--
-Aimed at Mac logic board technicians, SMCTool makes flashing a replacement SMC quicker and easier. It not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'. Simply take a matching donor SMC* from another board, replace and flash.
 
-*Currently, a full list of SMC boot compatibility between boards has not been established. I recommend you keep the board years as close as possible when taking a donor SMC from a non-matching board, otherwise the machine may not power on.
+<h1 align="center">
+<img width="200" src="resource/img/icon256.png" alt="SMCTool Logo">
+<br>
+SMCTool
+</h1>
 
-It has come to my attention SMCTool may not like some USB memory sticks, I use SanDisk SDCZ50 USB 2.0 without issue. Possibly an issue with UEFI, I don't know, yet. Also, removing the system storage drive is necessary in most cases, otherwise 'startup.nsh' may not run.
+<h4 align="center">Making SMC flashing quicker and easier.</h4>
 
-💡 This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
-🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#download">Download</a> •
+  <a href="#bootable-usb">Bootable USB</a> •
+  <a href="#flashing-an-smc">Flashing An SMC</a> •
+  <a href="#compatibility">Compatibility</a> •
+  <a href="#disclaimers">Disclaimers</a> •
+  <a href="#acknowledgements">Acknowledgements</a> •
+  <a href="#donate">Donate</a>
+</p>
 
-**Thanks to:-**\
-**Paul L Daniels** for development help, and the kick to finish this project.\
-**Logi.wiki** for the original work, which I could base this project on.\
-**EineWildeStehlampe** for information and help regarding UEFI.\
-**theSmudge** for being a great help verifying information.\
-**Nobluesky** for gathering Board-IDs.
+## About
 
-☕ If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto). Cheers. ☕
+This bootable shell is used to program a Mac LM4F (Stellaris) System Management Controller (SMC) in EFI mode with the correct stock firmware, this enables a technician to replace a faulty SMC with a donor from a non-matching machine. This not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'; simply take a donor SMC* from another board, replace it, and flash with this handy bootable software.
 
----
-**Before you start:**
--
-I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm also not responsible for any mistakes my end either. As they say, sometimes shit happens.
+> ⚠ *Currently, a full list of SMC boot compatibility between boards has not been established, I recommend you keep the platform and GPU type the same (MacBook, iMac, Mac Mini), (iGPU, dGPU).
 
-This is also **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware.
+## Download
 
----
-**Download:**
--
-Current Version: `1.0.6` - (31.01.2023)\
-See the [Changelog](CHANGELOG.md).\
-Downloads can be acquired in the [releases](https://github.com/MuertoGB/SMCTool/releases) section.
+| Version| Release Date| Latest|
+|--------|-------------|--------|
+| [V1.0.7](https://github.com/MuertoGB/SMCTool/releases/tag/v1.0.7)| 18th Feb 2023   | `Yes`  |
+| [V1.0.6](https://github.com/MuertoGB/SMCTool/releases/tag/v1.0.6)| 31st Jan 2022   | `No`  |
 
----
-**Creating a USB disk:**
--
-To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ using a GPT or MBR partition table, then....
+> 📔 See the full [Changelog](CHANGELOG.md).
 
-- Option A: Manually copy all SMC_Tool.iso files to the formatted USB disk.
-- Option B: Write the SMC_Tool.img to disk with ddrescue, Passmark imageUSB, or similar.
-- Option C: Use a bootable USB creation tool and select SMC_Tool.iso as the source file.
+## Bootable USB
 
-Extended instructions [here](BOOTABLEUSB.md).
+To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ for use with SMCTool.
+> ⚠ FAT32 using a GPT partition table is recommended.
 
----
-**Flashing the SMC:**
--
-  1. Plug in your USB disk and power on the Mac whilst holding the `Option ⌥` key.
-  2. Load into `SMC Tool` from the boot menu and let startup.nsh run.
-  3. Type the boardnumber.nsh you want to flash, e.g: `820-00165.nsh`, then press return, the script will then flash the SMC.
-  4. Type 'exit' to reboot, or power off machine to complete the process.
+Once the memory stick is ready, you can do any of the following:
+- Option A: Manually copy all files from the ISO to the formatted memory stick.
+- Option B: Write the image to the memory stick with ddrescue, Passmark imageUSB, or similar.
+- Option C: Use a bootable USB creation tool and select the ISO, or image as the source file, and the memory stick as the destination.
 
-  Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
+> ❕ Extended instructions [here](BOOTABLEUSB.md).
 
----
-**Compatible Boards:**
--
-See the [compatibility information](COMPATIBILITY.md).
+## Flashing An SMC
 
-Older, single file payloads for boards such as 820-3115/3332 are currently being worked out. Support may be added in the future.
+1. Remove the internal storage drive.
+2. If you have a portable device, plug in the power adapter.
+3. Insert your USB stick, then power on the device whilst holding `Option ⌥`.
+4. Load into SMCTool from the boot menu and let 'startup.nsh' run.
+5. Type the 'boardnumber.nsh' you want to flash, e.g: `820-00165.nsh`, then press return; the script will then flash the SMC.
+6. Type `exit` to reboot, or power off machine to complete the process.
 
----
+> ⚠ You may need to perform an [NVRAM reset](https://support.apple.com/en-mide/HT201255) after flashing an SMC.
 
-**Compatible SMC:**
--
-
-✅ Texus Instruments LM4 BGA157\
-❌ Texus Instruments TM4 BGA168\
-❌ Renesas DF2117 BGA145
-
-Currently supporting MacBook, and Mac Mini. iMac support is in development.
-
----
-**Why must the firmware be flashed:**
--
+**Why must the SMC be flashed?:**\
 Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
 
+**I flashed an incorrect firmware:**\
+No problem, just type the correct board number and the correct payload will be flashed. If you restart, or power off after an incorrect payload flash you may brick the device. If a system is somehow rendered 'bricked', and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
+
+> 💻 Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
+
+## Compatibility
+
+**Devices:**
+
+| Platform | Supported?  | Planned?|
+|----------|-------------|--------|
+| MacBook  | ✅         | `N/A`  |
+| Mac Mini | ✅         | `N/A`  |
+| iMac     | ❌         | `In development`|
+| Mac Pro  | ❌         | `Researching`  |
+
+> ℹ See the [compatibility information](COMPATIBILITY.md) for a full list of supported models.
+
+**System Management Controllers:**
+
+| SMC         | Supported?  | Planned?|
+|----------------|-------------|---------|
+| LM4F BGA157    | ✅          | `N/A`    |
+| TM4C BGA168    | ❌         | `Researching`    |
+| F2117LP BGA145 | ❌         | `No`    |
+
+> ℹ Older single file payloads for boards such as 820-3115, 3332, and 3462 are currently being worked out. Support *may* be added in the future.
+
+## Disclaimers
+
+I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm not responsible for any mistakes my end either.
+
+This is **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware. **Do not** flash your SMC if you have no reason to.
+
+## Acknowledgements
+
+> 🖼 Project icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.\
+> 💡 This tool is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
+>🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
+
+**⭐ Many Thanks To ⭐**
+* Paul L Daniels for development help, and the kick to finish this project.
+* Logi.wiki for the original work, which I could base this project on.
+* EineWildeStehlampe for information and help regarding UEFI.
+* theSmudge for being a great help verifying information.
+* Nobluesky for verifying iMac board-id's.
+
+## Donate
+
+<a href="https://www.buymeacoffee.com/Muerto">
+<img width="160" src="https://uc80e5ba3058c2d15b2a77972a8b.previews.dropboxusercontent.com/p/thumb/AB18JbfsN4REmFgvOrzwO3ooBl2K1VkxckN-h1H0qKcNhQDfIIROLC57mhfRHlNPZXBDEK7S3gHEnx6Uc35udaYsS-Mx66J6llYd_lSwfaIAntk3eynVXJNhd5nRHFDI1ncBuDVpVbrtKeQZlP2WPhejwCDH99YAFH8xcPef9q2d37EBjVV9-cK4cGUd7KmXCfa81wP6tXXV8r7-f_5L1c6tgs9HxLgqaDlAPXG8BcM9B6NRFdxlOsLGvYh9ESFE7fMb7dTrOu7PgsBsVrrIfTOxL8akUj2QiSGMJiZNXJrYrsW7mjKu_qQ-7Z-mhlZ2ZtY-FApmMFhfQrWj17D7hiXCemMdb_SaZCbaHBucMaJZ5Y1OPY3a6XlAxUCNJXSrFoI/p.png" alt="Buy Me A Coffee Logo">
+</a>
+
 ---
-**If you flash the wrong firmware:**
--
-You must immediately flash the correct firmware before powering off the system. In some cases you **might** brick the system if you reboot after flashing the incorrect firmware. After much testing I've never achieved a bricked board by flashing an incorrect firmware, however, others have mentioned 'no power' after loading the wrong SMC firmware for that board after a reboot, or power down.
-
-If a system is somehow rendered 'bricked' and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
-
----
-**If you want to flash a different firmware:**
--
-You must replace the update, base, code and EPM in the respective folder, say 820-00165 would be `payloads\Mac-937CB26E2E02BB01`.
-
-Alternative SMC payloads can be found in firmwareupdate.pkg inside the MacOS Install.ESD file, or [here](https://github.com/sadponyguerillaboy/SMC-Toolkit/tree/main/SMCPayloads).
-
----
-
-**Screen resolution:**
--
-Use the `mode` command to display a list of supported screen modes, type the highest mode available e.g. `mode 160 47`, then press return.
-
-The script will automatically switch screen mode when it can.
-
----
-**Licenses and acknowledgements:**
--
-Startup manager icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.
-
-  *** UEFI Shell v2.0, release 4.632 ***
-
-  This bootable image contains builds of the 2.0 UEFI Shell, as provided by the
-  Open Source 'EDK' project (https://github.com/tianocore/edk).
-
-  More specifically, this release, which we call '4.632', was produced using the
-  Shell executables, built on 2010.05.07, and published at:
-  https://github.com/tianocore/edk/tree/master/Other/Maintained/Application/UefiShell/bin
-
-  This image supports the following UEFI platform architectures:
-  * X64
-  * IA32
-
-  You are invited to validate that the binaries provided on this ISO are 100%
-  identical to the ones from the official EDK project.
-
-  For more information on this release, you are invited to visit our official
-  project page at https://github.com/pbatard/UEFI-Shell.
