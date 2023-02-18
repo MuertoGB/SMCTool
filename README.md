@@ -15,7 +15,6 @@ SMCTool
   <a href="#compatibility">Compatibility</a> •
   <a href="#disclaimers">Disclaimers</a> •
   <a href="#acknowledgements">Acknowledgements</a> •
-  <a href="#thanks">Thanks</a> •
   <a href="#donate">Donate</a> •
   <a href="#licenses">Licenses</a>
 </p>
@@ -92,24 +91,23 @@ I'm not responsible if you do something wrong, if you're here I expect you to kn
 
 This is **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware. **Do not** flash your SMC if you have no reason to.
 
-## Acknowledgements:
+## Acknowledgements
 
-> 🖼 Startup manager icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.\
-> 💡 This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
+> 🖼 Project icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.\
+> 💡 This tool is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
 >🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
 
-## Thanks
-
-**Paul L Daniels** for development help, and the kick to finish this project.\
-**Logi.wiki** for the original work, which I could base this project on.\
-**EineWildeStehlampe** for information and help regarding UEFI.\
-**theSmudge** for being a great help verifying information.\
-**Nobluesky** for verifying iMac board-id's.
+**⭐ Many Thanks To ⭐**
+* Paul L Daniels for development help, and the kick to finish this project.
+* Logi.wiki for the original work, which I could base this project on.
+* EineWildeStehlampe for information and help regarding UEFI.
+* theSmudge for being a great help verifying information.
+* Nobluesky for verifying iMac board-id's.
 
 ## Donate
 
 Donations do not go into my own pocket, they go back into research and development of applications to help others in the repair community. If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto).
 
-## Licenses:
+## Licenses
 
 Incoming.
