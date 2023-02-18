@@ -1,5 +1,6 @@
 **Version 1.0.7**
 ```
+  - bootx64.efi replaced with a more compatible shell
   - Removed 00426 (IG) and pertaining information
 ```
 **Version 1.0.6**

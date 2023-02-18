@@ -22,7 +22,7 @@ SMCTool
 
 ## About
 
-SMCTool is used to program a Mac LM4F (Stellaris) System Management Controller (SMC) in EFI mode with the correct stock firmware, this enables a technician to replace a faulty SMC with a donor from a non-matching machine. This not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'; simply take a donor SMC* from another board, replace it, and flash with this handy bootable software.
+This bootable shell is used to program a Mac LM4F (Stellaris) System Management Controller (SMC) in EFI mode with the correct stock firmware, this enables a technician to replace a faulty SMC with a donor from a non-matching machine. This not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'; simply take a donor SMC* from another board, replace it, and flash with this handy bootable software.
 
 > ⚠ *Currently, a full list of SMC boot compatibility between boards has not been established, I recommend you keep the platform and GPU type the same (MacBook, iMac, Mac Mini), (iGPU, dGPU).
 
@@ -88,9 +88,9 @@ No problem, just type the correct board number and the correct payload will be f
 
 ## Disclaimers
 
-I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm also not responsible for any mistakes my end either. As they say, sometimes shit happens.
+I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm also not responsible for any mistakes my end either.
 
-This is **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware. Do not flash your SMC if you have no reason to.
+This is **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware. **Do not** flash your SMC if you have no reason to.
 
 ## Acknowledgements:
 
