@@ -17,7 +17,7 @@ SMCTool
   <a href="#acknowledgements">Acknowledgements</a> •
    <a href="#donate">Donate</a> •
    <a href="#thanks">Thanks</a> •
-  <a href="#license">License</a>
+  <a href="#licenses">Licenses</a>
 </p>
 
 ## About
@@ -55,10 +55,10 @@ Extended instructions [here](BOOTABLEUSB.md).
 6. Type `exit` to reboot, or power off machine to complete the process.
 
 **Why must the SMC be flashed?:**
-Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
+> Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
 
-**I flashed the incorrect firmware:**
-No problem, just type the correct board number and the correct payload will be flashed. If you restart, or power off after an incorrect payload flash, you may brick the device. If a system is somehow rendered 'bricked', and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
+**I flashed an incorrect firmware:**
+> No problem, just type the correct board number and the correct payload will be flashed. If you restart, or power off after an incorrect payload flash, you may brick the device. If a system is somehow rendered 'bricked', and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
 
 Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
 
@@ -97,6 +97,6 @@ Donations do not go into my own pocket, they go back into research and developme
 **theSmudge** for being a great help verifying information.\
 **Nobluesky** for verifying iMac board-id's.
 
-## License(s):
+## Licenses:
 
 Incoming.
