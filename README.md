@@ -71,7 +71,7 @@ No problem, just type the correct board number and the correct payload will be f
 | MacBook  | ✅         | `N/A`  |
 | Mac Mini | ✅         | `N/A`  |
 | iMac     | ❌         | `In development`|
-| Mac Pro  | ❌         | `No`  |
+| Mac Pro  | ❌         | `Researching`  |
 
 > ℹ See the [compatibility information](COMPATIBILITY.md) for a full list of supported models.
 
@@ -80,7 +80,7 @@ No problem, just type the correct board number and the correct payload will be f
 | SMC         | Supported?  | Planned?|
 |----------------|-------------|---------|
 | LM4F BGA157    | ✅          | `N/A`    |
-| TM4C BGA168    | ❌         | `No`    |
+| TM4C BGA168    | ❌         | `Researching`    |
 | F2117LP BGA145 | ❌         | `No`    |
 
 > ℹ Older single file payloads for boards such as 820-3115, 3332, and 3462 are currently being worked out. Support *may* be added in the future.
