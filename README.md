@@ -15,7 +15,7 @@ SMCTool
   <a href="#compatibility">Compatibility</a> •
   <a href="#disclaimers">Disclaimers</a> •
   <a href="#acknowledgements">Acknowledgements</a> •
-  <a href="#donate">Donate</a> •
+  <a href="#donate">Donate</a>
 </p>
 
 ## About
