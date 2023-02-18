@@ -36,7 +36,7 @@ This bootable shell is used to program a Mac LM4F (Stellaris) System Management 
 ## Bootable USB
 
 To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ for use with SMCTool.
-> ⚠ FAT32 using a GPT partition table is recommended.
+> ⚠ FAT32 using a GUID Partition Table (GPT) is recommended.
 
 Once the memory stick is ready, you can do any of the following:
 - Option A: Manually copy all files from the ISO to the formatted memory stick.
