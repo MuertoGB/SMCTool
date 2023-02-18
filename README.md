@@ -15,8 +15,8 @@ SMCTool
   <a href="#compatibility">Compatibility</a> •
   <a href="#disclaimers">Disclaimers</a> •
   <a href="#acknowledgements">Acknowledgements</a> •
-   <a href="#donate">Donate</a> •
-   <a href="#thanks">Thanks</a> •
+  <a href="#thanks">Thanks</a> •
+  <a href="#donate">Donate</a> •
   <a href="#licenses">Licenses</a>
 </p>
 
@@ -40,9 +40,9 @@ To begin, format a USB disk in ExFAT, FAT32, VFAT or HFS+ for use with SMCTool.
 > ⚠ FAT32 using a GPT partition table is recommended.
 
 Once the memory stick is ready, you can do any of the following:
-- Option A: Manually copy all files from the ISO to the formatted USB disk.
-- Option B: Write the image to disk with ddrescue, Passmark imageUSB, or similar.
-- Option C: Use a bootable USB creation tool and select the ISO, or image as the source file.
+- Option A: Manually copy all files from the ISO to the formatted memory stick.
+- Option B: Write the image to the memory stick with ddrescue, Passmark imageUSB, or similar.
+- Option C: Use a bootable USB creation tool and select the ISO, or image as the source file, and the memory stick as the destination.
 
 > ❕ Extended instructions [here](BOOTABLEUSB.md).
 
@@ -59,7 +59,7 @@ Once the memory stick is ready, you can do any of the following:
 Each System Management Controller is specifically programmed for it's counterpart board, and is in charge of managing video, hibernation, battery charging, thermal and power management. Incorrect or mismatched firmware causes erratic behaviour such as broken display resolution, high fan speed, throttling, and crashing.
 
 **I flashed an incorrect firmware:**\
-No problem, just type the correct board number and the correct payload will be flashed. If you restart, or power off after an incorrect payload flash, you may brick the device. If a system is somehow rendered 'bricked', and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
+No problem, just type the correct board number and the correct payload will be flashed. If you restart, or power off after an incorrect payload flash you may brick the device. If a system is somehow rendered 'bricked', and cannot get to the boot menu, you must replace the SMC again. You can always put the incorrectly flashed SMC aside for future use on a board it was 'accidentally' programmed for.
 
 > 💻 Quick video of flashing an SMC [here](https://www.youtube.com/watch?v=nUm30m3zNxI).
 
@@ -88,20 +88,15 @@ No problem, just type the correct board number and the correct payload will be f
 
 ## Disclaimers
 
-I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm also not responsible for any mistakes my end either.
+I'm not responsible if you do something wrong, if you're here I expect you to know what you're doing. Where I do my utmost to verify all information to my best ability, I'm not responsible for any mistakes my end either.
 
 This is **not** a magical 'fix my Mac' tool, it has a specific purpose, which is flashing correct payloads to a System Management Controller with incorrect firmware. **Do not** flash your SMC if you have no reason to.
 
 ## Acknowledgements:
 
-Startup manager icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.
-
-💡 This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
-🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
-
-## Donate
-
-Donations do not go into my own pocket, they go back into research and development of applications to help others in the repair community. If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto).
+> 🖼 Startup manager icon by [KBuHT](https://macosicons.com/#/u/KBuHT) on macOSicons.\
+> 💡 This project is based on the work from  [logi.wiki](https://logi.wiki/index.php?title=SMC_flashing).\
+>🎥 SMC Tool tested by Paul L Daniels on [YouTube](https://www.youtube.com/watch?v=q8LEh8C4iYo).
 
 ## Thanks
 
@@ -110,6 +105,10 @@ Donations do not go into my own pocket, they go back into research and developme
 **EineWildeStehlampe** for information and help regarding UEFI.\
 **theSmudge** for being a great help verifying information.\
 **Nobluesky** for verifying iMac board-id's.
+
+## Donate
+
+Donations do not go into my own pocket, they go back into research and development of applications to help others in the repair community. If you'd like to make a donation for my work, please [see here](https://www.buymeacoffee.com/Muerto).
 
 ## Licenses:
 
