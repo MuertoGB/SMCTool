@@ -18,6 +18,8 @@ SMCTool
   <a href="#donate">Donate</a>
 </p>
 
+> ⚠ This project will soon be put into read-only mode, the new version will be available at https://github.com/MuertoGB/SMCFT
+
 ## About
 
 This bootable shell is used to program a Mac LM4F (Stellaris) System Management Controller (SMC) in EFI mode with the correct stock firmware, this enables a technician to replace a faulty SMC with a donor from a non-matching machine. This not only saves time, but money, as a specific donor SMC isn't necessary to have 'on hand'; simply take a donor SMC* from another board, replace it, and flash with this handy bootable software.
