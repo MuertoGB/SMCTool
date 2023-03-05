@@ -26,6 +26,8 @@ This bootable shell is used to program a Mac LM4F (Stellaris) System Management 
 
 > ⚠ *Currently, a full list of SMC boot compatibility between boards has not been established, I recommend you keep the platform and GPU type the same (MacBook, iMac, Mac Mini), (iGPU, dGPU).
 
+Beware of imposters like this jackoff: https://www.youtube.com/watch?v=mHCduTj01Zo
+
 ## Download
 
 | Version| Release Date| Latest|
