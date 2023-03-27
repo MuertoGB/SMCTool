@@ -18,7 +18,7 @@ SMCTool
   <a href="#donate">Donate</a>
 </p>
 
-> ⚠ This project is now read-only, the new version is available at https://github.com/MuertoGB/SMCFT
+> ⚠ This project is now read-only, new versions will be available at https://github.com/MuertoGB/SMCFT
 
 ## About
 
